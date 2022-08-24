@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        div{            
+            
+        }
+        
+        button{
+            background-color: #EEEFF1;
+            width: 100px;
+        }
+        fieldset{
+            border: 3px solid;
+            width: 300px;
+            height: 200px;
+        }
+        h1{
+            font-family: "맑은 고딕";
+            color: black;
+        }
+        body {
+        margin: 0;
+        background-color: #ffffff;
+}
+.logo{
+    margin-top: 10%;
+    width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border: none;
+}
+        .login{
+        width: 350px;
+        background-color: #EEEFF1;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+        margin-top: 0px;
+        padding: 20px;
+        text-align: center;
+        border: blue 1px solid;
+        font-size: 14px;
+        border: 1px solid rgb(73, 73, 73);
+        color: black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+}
+.upmenu{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 20px;
+    width: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #a8defda1;
+    border: 1px solid rgb(73, 73, 73);
+    margin-top: 100px;
+}
+.text-field {
+      font-size: 14px;
+      padding: 10px;
+      border: 2px solid rgba(85, 85, 85, 0.452);
+      width: 260px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+}
+#logininfo
+{
+    color:white;
+    font: 12px;
+    background-color: rgba(13, 66, 240, 0.815);
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border:none;
+}
+
+#engname
+{
+    font-family: "맑은 고딕";
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div></div>
+    <h1 id="engname">Smart Forklift System</h1>
+    <h1>스마트 지게차 시스템</h1>
+    </div>
+    <div class="upmenu">로그인</div> 
+    <div class="login">
+    <form id="user_login" method="POST" action="checkid.php">
+        <p><input type ="text" id="user_id" name="ID" class="text-field" placeholder="사원번호" size ="15" required></input></p>
+        <p><input type ="text" id="user_name" name="NAME" class="text-field" placeholder="이름" size ="15" required></input></p>
+        <input type ="submit" value = "Login" id="logininfo"></input>
+        <br>
+    </form>
+</div>
+
+</body>
+</html>

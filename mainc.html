@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트 지게차 시스템</title>
+    <style>
+
+        body{
+            background-color: white;
+        }
+        #regist{
+        font-size: 10px;     
+        }
+
+        #login{
+        font-size: 14px;
+        width: 180px;
+        height: 40px;
+        margin-top: 20px;
+        background-color: black;
+        color: white;
+        }
+
+        section.contenta
+        {
+            position: relative;
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 90%;
+            height: 700px;
+            background-color: #EEEFF1;
+            border: none;
+    
+        }
+
+        li{
+            border-bottom: 1px solid #dcdcdc;
+        }
+        h1 {
+        height: 40px;text-align: center;color: #fff;
+        font-size: 20px;line-height: 1.8;letter-spacing: -2px;
+         background: #d71a21;}
+         
+    ul.upper {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+    ul:after{
+    content:'';
+    display: block;
+    clear:both;
+}
+li{
+    text-align: center;
+    border-bottom: 1px solid #dcdcdc;
+    }
+li.menua {
+
+float: left;
+width: 34%;
+
+}
+li.menub {
+
+    float: left;
+    width: 33%;
+ 
+}
+li.menuc {
+
+    float: left;
+    width: 33%;
+  
+}
+li.menua a{
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li.menub a{
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.menuc a{
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+header{
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 80px;
+    margin-left: 20%;
+    margin-right: 20%;
+    width : 60%;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+#input_id
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+    </style>
+</head>
+<body>
+<header>
+    <div>
+        
+    </div>
+    <ul class="upper">
+      <li class="menua"><a href="#news">유저확인</a></li>
+      <li class="menub"><a href="#contact">데이터확인</a></li>
+      <li class="menuc"><a href="#about">체크리스트</a></li>
+    </ul>
+</header>
+
+    <!--<div class='profile'>
+        <p>
+
+            <button type="button" id="login" onclick="location.href='login.html'">로그인</button>
+            <br>
+        </p>
+    </div>-->
+    <section class='contenta'>
+
+    <span id="input_id">
+        <p>찾고자 하는 체크리스트의 사번을 입력하세요</p>
+        <form id = "input_slot" method = "POST" action="mainc.php">
+            사원번호 : <input type="text" size="30" name="search_uid">
+            <br>
+        <input type="submit" id="subtophp" value="재출">
+        </form>
+        
+    </span>
+
+<p id="demo">
+    <br>
+    <table id=\"overview\"></td>
+   <tr id=\"row\"><td id=\"col\">1번</td><td id=\"col\>2번</td><td id=\"col\>2-1번</td></tr>";
+    <tr id=\"row\"><td id=\"col\">3번</td><td id=\"col\>4번</td></tr>";
+</p>
+    </section>
+    <br>
+</body>
+</html>
